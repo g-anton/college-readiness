@@ -5,19 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Hello world!</title>
+    <title>College Readiness</title>
+
+    <!-- import Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-    <script src="/script.js" defer></script>
-    
+
+    <!-- mport html2canvas library-->
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-    <h1>Hello World!</h1>
-    <p>Wow, this is where my content will go!</p>
-    <button>Click Me</button
-      
+
+    <h1>College Readiness</h1>
+
+    <div class="container">
+      <i class="bi-arrow-left-circle-fill left" onclick="goBack()"></i>
+      <i class="bi-arrow-right-circle-fill right" onclick="goForward()"></i>
+
+      <!--three full-screen sections of content to click through-->
+      <div class="content-container"></div>
+      <section class="full-screen" id="slide-open">
+        <p>
+          Are you a freshman in highschool who is starting to think about
+          college? A student who feels scared to dive into the "adult" world. A
+          student who needs a bit of guidance well this is checklist for you!
+          You will be provided with tips/tricks to ease the college experience.
+          At the end you will be to download a PNG version of the checklist to
+          keep with you through your college prep journey.
+        </p>
+        <button onclick="openChecklist()">Open Checklist</button>
+      </section>
+
+      <section class="full-screen hidden" id="slide-1">
+        <p>
+          Start by speaking with your advisor about the possibility of taking
+          accelerated math courses. Studies have shown students who partake in
+          higher level, rigorous courses are more likely to further their
+          academic succes in college. Consider taking Alegbra 1 to then move
+          onto to a calculus track to prepare.
+        </p>
+        <button onclick="openChecklist()">Open Checklist</button>
+      </section>
+
+      <section class="full-screen hidden" id="slide-2">
+        <p>
+          After speaking with your advisor set up a meeting with a tutor. This
+          will be benefical if you find the coursework to be a bit of a
+          challenge. A tutor will assit you not only with assignments but
+          provide you with additional tools for overall structure. This is a
+          great resource to prepare for college!
+        </p>
+        <button onclick="openChecklist()">Open Checklist</button>
+      </section>
+
+      <section class="full-screen hidden" id="slide-3">
+        <p></p>
+        <button onclick="openChecklist()">Open Checklist</button>
+      </section>
+    </div>
+
+    <section id="checklist" class="noheight">
+      <h3>Your College Readiness Checklist</h3>
+      <div>
+        <input type="checkbox" name="check1" />
+        <label for="check1"
+          >I've spoken to my advisor about accerlative math courses.</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="check2" />
+        <label for="check2"
+          >I booked a meeting with a tutor at my school.</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="check3" />
+        <label for="check3"
+          >I made a list with college I'd like to attend with application
+          deadlines.</label
+        >
+      </div>
+
+      <button class="download-button" onclick="downloadPNG()">
+        Download a PNG of your Checklist
+      </button>
+    </section>
   </body>
 </html>
