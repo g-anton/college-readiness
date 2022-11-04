@@ -6,6 +6,8 @@ Creators
 --> Gabriela --> Vanessa --> Jaliah
 
 Sources
-Source 1
-Source 2
-Source 3
+1. Objective course placement and college readiness: Evidence from targeted middle school math acceleration - FIU Library
+2. Connections Academy by Pearson
+3. What to Do in High School to Prepare for College - U.S. News
+4. Source 4 
+5. Source 5
