@@ -140,17 +140,17 @@ button:hover {
   overflow: hidden;
 }
 
-h1::before {  
+title::before {  
   transform: scaleX(0);
   transform-origin: bottom right;
 }
 
-h1:hover::before {
+title:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-h1::before {
+title::before {
   content: " ";
   display: block;
   position: absolute;
@@ -161,7 +161,7 @@ h1::before {
   transition: transform .3s ease;
 }
 
-h1 {
+title {
   position: relative;
   font-size: 5rem;
 }
