@@ -130,7 +130,7 @@ button:hover {
 
 #checklist.noheight {
   height: 0;
-  padding: 0px;
+  padding: 20px;
   overflow: hidden;
 }
 
