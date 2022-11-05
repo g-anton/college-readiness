@@ -60,7 +60,7 @@ h1 {
 }
 
 .full-screen {
-  height: 35vh;
+  height: 60vh;
   width: 100%;
   color: white;
   font-weight: bold;
@@ -130,7 +130,7 @@ button:hover {
 
 #checklist.noheight {
   height: 0;
-  padding: 20px;
+  padding: 0px;
   overflow: hidden;
 }
 
