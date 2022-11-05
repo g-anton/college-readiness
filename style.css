@@ -28,10 +28,25 @@ h1 {
   padding: 20px;
 }
 
+.rectangle {
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+}
+
 .float-later {
   background: #9f86c0; /*lilac*/
   margin-top: 20px;
 }
+
+
+.float-later:hover {
+  animation: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 
 .container {
   text-align: center;
