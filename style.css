@@ -13,7 +13,7 @@ html {
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* images and videos max out at full width */
