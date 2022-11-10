@@ -16,17 +16,58 @@ body {
   font-family: "Lucida Console", "Courier New", monospace;
   background-image: url("https://cdn.glitch.global/b07d51ae-24a5-49c7-bea5-756f314d756b/backgroundimage.jpg?v=1668108040454");
 }
-
-/* images and videos max out at full width */
-img,
-video {
- width: 300px;
-  height: 300px;
+.title-word {
+  animation: color-animation 4s linear infinite;
 }
 
-h1 {
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
   text-align: center;
-  padding: 20px;
+  height: 100vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
 }
 
 .rectangle {
@@ -106,26 +147,25 @@ h1 {
 }
 
 #slide-1 {
-  background: #732c2c;
+  background:#DF8453;
   margin: auto;
 }
 
 #slide-2 {
-  background: #aa998f;
+  background: #E4A9A8;
   margin: auto;
 }
 
 #slide-3 {
-  background: #7d4f50;
+  background: #ACCFCB;
 }
 
 #slide-4 {
-  background: #d1be9c;
+  background: #DBAD4A;
 }
 
-#slide-5{
-  background: #732c2c;
-  margin: auto;
+#slide-5 {
+  background: #3D8DAE;
 }
 
 #checklist {
