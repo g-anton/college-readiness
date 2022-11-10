@@ -12,6 +12,6 @@ Sources
 2. Connections Academy by Pearson
 3. What to Do in High School to Prepare for College - U.S. News
 4. Mental Health Education - National Alliance on Mental Illness
-5. Source 5
-
+5. FloridaShines.Org
+6.Schoolhouse.world
 https://g-anton.github.io/college-readiness/
