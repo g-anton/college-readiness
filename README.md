@@ -11,7 +11,7 @@ Sources
 1. Objective course placement and college readiness: Evidence from targeted middle school math acceleration - FIU Library
 2. Connections Academy by Pearson
 3. What to Do in High School to Prepare for College - U.S. News
-4. Mental Health Education - National Alliance on Mnetal Illness
+4. Mental Health Education - National Alliance on Mental Illness
 5. Source 5
 
 https://g-anton.github.io/college-readiness/
