@@ -121,6 +121,12 @@ h1 {
 #slide-4 {
   background: #d1be9c;
 }
+
+#slide-5{
+  background: #732c2c;
+  margin: auto;
+}
+
 #checklist {
   position: absolute;
   top: 60vh;
