@@ -14,6 +14,7 @@ html {
 body {
   margin: 0;
   font-family: "Lucida Console", "Courier New", monospace;
+  background-image: url("https://cdn.glitch.global/b07d51ae-24a5-49c7-bea5-756f314d756b/backgroundimage.jpg?v=1668108040454");
 }
 
 /* images and videos max out at full width */
