@@ -13,9 +13,17 @@ html {
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: sans-serif;
   background-image: url("https://cdn.glitch.global/b07d51ae-24a5-49c7-bea5-756f314d756b/backgroundimage.jpg?v=1668108040454");
 }
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
 .title-word {
   animation: color-animation 4s linear infinite;
 }
@@ -70,31 +78,6 @@ body {
   text-transform: uppercase;
 }
 
-.rectangle {
-  padding: 30px;
-  height: 100px;
-  width: 100px;
-}
-
-.float-later {
-  background: #CDACA1 /*pink*/
-  margin-top: 60px;
-}
-
-
-.float-later:hover {
-  animation: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  
-100% {
-    transform: translate(0, 30px);
-}
-}
 .container {
   text-align: center;
   position: relative;
@@ -126,7 +109,7 @@ body {
 }
 
 .full-screen {
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   color: white;
   font-weight: bold;
@@ -135,6 +118,7 @@ body {
   top: 0;
   left: 0;
   padding: 20px;
+  overflow: scroll;
 }
 
 .hidden {
@@ -167,7 +151,6 @@ body {
 #slide-5 {
   background: #3D8DAE;
 }
-
 #checklist {
   position: absolute;
   top: 60vh;
@@ -199,7 +182,7 @@ button:hover {
 }
 
 #checklist.noheight {
-  height: 0;
+  height: 0vh;
   padding: 0px;
   overflow: hidden;
 }
