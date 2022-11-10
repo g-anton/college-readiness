@@ -104,22 +104,21 @@ h1 {
   margin-top: 5px;
 }
 
-#slide-open {
-  background: #732c2c;
-  margin: auto;
-  position: center;
-}
-
 #slide-1 {
-  background: #aa998f;
+  background: #732c2c;
   margin: auto;
 }
 
 #slide-2 {
-  background: #7d4f50;
+  background: #aa998f;
+  margin: auto;
 }
 
 #slide-3 {
+  background: #7d4f50;
+}
+
+#slide-4 {
   background: #d1be9c;
 }
 #checklist {
