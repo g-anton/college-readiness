@@ -109,7 +109,7 @@ video {
 }
 
 .float-later {
-  background: #9f86c0; /*lilac*/
+  background:; 
   margin-top: 20px;
 }
 
@@ -281,7 +281,7 @@ button:hover {
   visibility: visible;
   overflow: hidden;
 }
-
+}
 
 
 
