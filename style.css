@@ -108,6 +108,91 @@ video {
   top: -30px;
 }
 
+.float-later {
+  background: #9f86c0; /*lilac*/
+  margin-top: 20px;
+}
+
+.float-later:hover {
+  animation: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100%  {
+    transform: translate(0, -0px);
+  }
+}
+
+.my-animation-div {
+  background: blue;
+  margin-top: 28px;
+}
+
+@keyframes change-color {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .9s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+
+
 .full-screen {
   height: 60vh;
   width: 100%;
